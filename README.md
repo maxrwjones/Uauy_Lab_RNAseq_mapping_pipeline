@@ -1,4 +1,4 @@
-# Uauy_Lab_RNAseq_mapping_pipeline
+# Basic Uauy Lab RNA-seq mapping pipeline
 A small pipeline for generating transcriptomic data from raw FASTQ files via Fastp trimming and Kallisto pseudoalignment.
 
 Fastp automatically detects adapters and trims them from the raw reads. Any reads smaller than a specified threshold after trimming are discarded.
