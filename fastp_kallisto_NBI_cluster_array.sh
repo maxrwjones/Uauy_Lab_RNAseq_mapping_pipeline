@@ -26,8 +26,8 @@ input_dir=/your/input/directory
 index=/path/to/index/index_name.k31
 
 ### Step 4) In the "SBATCH --output" and "SBATCH --error" lines, replace 'Z'
-### with "/your/base/directory/logs"
-### All logs from the pipeline will be stored here.
+### with the directory you wish to store logs in. This directory must
+### already exist.
 
 ### Step 5) Set 'Y' in the "SBATCH --array" line such that
 ### Y = (number of samples * 2) - 1
@@ -51,10 +51,8 @@ echo date
 echo
 
 ### Set up generic directories for pipeline
-log_dir=$base_dir/logs
 out_dir=$base_dir/outputs
 mkdir -p $base_dir
-mkdir -p $log_dir
 mkdir -p $out_dir
 mkdir -p $out_dir/fastp_reports
 echo "Directories created"
