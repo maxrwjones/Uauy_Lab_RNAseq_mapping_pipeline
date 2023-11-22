@@ -47,7 +47,7 @@ threads=1
 ##### SETUP #####
 #################
 
-echo date
+date
 echo
 
 ### Set up generic directories for pipeline
@@ -106,4 +106,4 @@ $out_dir/${sample_prefix}_trimmed_2.fq.gz
 
 echo "Kallisto pseudoalignment complete"
 echo
-echo date
+date
